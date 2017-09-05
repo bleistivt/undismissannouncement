@@ -1,0 +1,16 @@
+{
+    "name": "Undismiss Announcement",
+    "description": "Adds an option to \"undismiss\" announcements.",
+    "version": "0.1",
+    "mobileFriendly": true,
+    "license": "GNU GPL2",
+    "gitHub": "bleistivt/undismissannouncement",
+    "key": "undismissannouncement",
+    "type": "addon",
+    "authors": [
+        {
+            "name": "Bleistivt",
+            "homepage": "http://bleistivt.net"
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 {
     "name": "Undismiss Announcement",
     "description": "Adds an option to \"undismiss\" announcements.",
-    "version": "0.1",
+    "version": "0.2",
     "mobileFriendly": true,
     "license": "GNU GPL2",
     "gitHub": "bleistivt/undismissannouncement",

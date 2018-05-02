@@ -1,16 +1,5 @@
 <?php
 
-$PluginInfo['undismissannouncement'] = [
-    'Name' => 'Undismiss Announcement',
-    'Description' => 'Adds an option to "undismiss" announcements.',
-    'Version' => '0.1',
-    'MobileFriendly' => true,
-    'Author' => 'Bleistivt',
-    'AuthorUrl' => 'http://bleistivt.net',
-    'License' => 'GNU GPL2',
-    'GitHub' => 'bleistivt/undismissannouncement'
-];
-
 class UndismissAnnouncementPlugin extends Gdn_Plugin {
 
     public function discussionController_undismiss_create($sender, $discussionID) {
@@ -42,7 +31,7 @@ class UndismissAnnouncementPlugin extends Gdn_Plugin {
     }
 
 
-    public function base_discussionOptionsDropdown_handler($sender, &$args) {
+    public function base_discussionOptionsDropdown_handler($sender, $args) {
         $discussion = $args['Discussion'];
 
         if (Gdn::session()->isValid() && $discussion->Announce && $discussion->Dismissed) {

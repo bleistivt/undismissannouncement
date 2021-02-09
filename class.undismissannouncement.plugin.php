@@ -36,7 +36,7 @@ class UndismissAnnouncementPlugin extends Gdn_Plugin {
 
         if (Gdn::session()->isValid() && $discussion->Announce && $discussion->Dismissed) {
             $args['DiscussionOptionsDropdown']->addLink(
-                t('Undismiss'),
+                Gdn::translate('Undismiss'),
                 '/discussion/undismiss/'.$discussion->DiscussionID,
                 'undismiss',
                 'Undismiss Hijack'
